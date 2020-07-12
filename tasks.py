@@ -32,9 +32,12 @@ def clean(c):
         os.makedirs(CONFIG['deploy_path'])
 
 @task
-def build(c):
-    """Build local version of site"""
-    c.run('pelican -s {settings_base}'.format(**CONFIG))
+def build(c, prod=False):
+    """Build the site in dev mode (default) or prod mode (with `--prod` argument)"""
+    if prod:
+        c.run('pelican -s {settings_publish}'.format(**CONFIG))
+    else:
+        c.run('pelican -s {settings_base}'.format(**CONFIG))
 
 @task
 def rebuild(c):
