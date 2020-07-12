@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 0.2em;
+    padding-bottom: 0.1em;
 }
 
 ul {
@@ -41,4 +41,8 @@ ul {
 .post-title a:hover {
     color: #0040a0 !important;
     text-decoration: underline;
+}
+
+.section {
+    padding-bottom: 0.4em;
 }
