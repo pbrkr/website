@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from pelican import __version__ as PELICAN_VERSION
 
 AUTHOR = 'Paul Barker'
-SITENAME = 'pbarker.dev'
+COPYRIGHT_YEAR = 2020
+SITENAME = 'Paul Barker'
 SITEURL = ''
+THEME = 'theme'
 
 PATH = 'content'
+ARTICLES_PATHS = ('posts', )
+PAGE_PATHS = ('pages', )
 
-TIMEZONE = 'Europe/London'
+TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
 
@@ -21,17 +26,28 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+MENUITEMS = (
+    ('Home', '/'),
+)
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+PLUGINS = ('neighbors', )
+
+STATIC_PATHS = ('css', 'images', )
+
+ARTICLE_URL = 'posts/{date:%Y-%m-%d}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y-%m-%d}/{slug}/index.html'
+
+ARCHIVES_URL = 'archives/'
+ARCHIVES_SAVE_AS = 'archives/index.html'
+
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
