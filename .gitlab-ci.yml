@@ -1,0 +1,29 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: python:3.8
+  script:
+    - pip install -r requirements.txt
+    - invoke build --prod
+  artifacts:
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  environment:
+    name: production
+    url: https://pbarker.dev
+  image: alpine
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - /bin/true
+  artifacts:
+    paths:
+    - public
+  only:
+    - prod
