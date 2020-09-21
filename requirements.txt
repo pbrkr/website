@@ -1,3 +1,4 @@
 pelican
 pelican-neighbors
+pelican-youtube
 invoke
