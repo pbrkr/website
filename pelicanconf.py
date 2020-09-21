@@ -32,7 +32,10 @@ MENUITEMS = (
 
 DEFAULT_PAGINATION = 10
 
-PLUGINS = ('neighbors', )
+PLUGINS = (
+    'neighbors',
+    'pelican_youtube',
+)
 
 STATIC_PATHS = ('css', 'images', )
 
