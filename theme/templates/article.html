@@ -1,19 +1,23 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
 {% block content %}
-<div class="row my-4">
+<div class="row mt-4">
+    <div class="col-md-12">
+        <h1 class="post-title">
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                {{ article.title }}
+            </a>
+        </h1>
+    </div>
+</div>
+<div class="row mb-4">
     <div class="col-md-2">
     </div>
     <div class="col-md-8 page-content">
         <div>
-            <h1 class="post-title">
-                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                    {{ article.title }}
-                </a>
-            </h1>
             <p class="post-meta">
-                Published <time datetime="{{ article.date.isoformat() }}">{{ article.date | strftime('%Y-%m-%d') }}</time>
-                <br />
+                Published: <time datetime="{{ article.date.isoformat() }}">{{ article.date | strftime('%Y-%m-%d') }}</time> <br />
+                Tags: {{ article.tags|join(', ') }}<br />
                 <a href="{{ SITEURL }}/{{ article.url }}">Permalink</a>
             </p>
         </div>

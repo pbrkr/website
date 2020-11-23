@@ -2,7 +2,13 @@ Open Source License Compliance with Yocto Project
 =================================================
 
 :date: 2020-09-21
-:summary: This is a talk for Linaro Virtual Connect 2020.
+:tags: yocto, linux, embedded-linux, conference-talks, license-compliance
+:summary: I presented this talk at Linaro Virtual Connect 2020. It's a follow
+   up to my previous talk on the same subject at ELCE 2019 and I included
+   additional material on license flags, SDKs, language package managers and
+   SPDX document generation. Forthe discussion of language package managers,
+   I used the Rust programming language and the associated Cargo build tool
+   as an example.
 
 Abstract
 --------
@@ -24,6 +30,11 @@ Project.
 
 This talk will cover technical best practices and available tools, it will
 not give legal advice.
+
+Video
+-----
+
+.. youtube:: HILbAIeCTR8
 
 Slides
 ------
