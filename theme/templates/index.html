@@ -2,12 +2,16 @@
 
 {% block content %}
 <div class="row my-4">
-    <div class="col-md-6 py-5">
+    <div class="col-md-12">
+        <h1>Paul Barker: Open Source and Embedded Linux Consultant</h1>
+    </div>
+</div>
+<div class="row my-4">
+    <div class="col-md-6">
         <img class="rounded mx-auto d-block" src="{{ SITEURL }}/images/pbarker.jpg" />
     </div>
-    <div class="col-md-6 py-4">
-        <h1>Paul Barker</h1>
-        <p>Open Source and Embedded Linux Consultant</p>
+    <div class="col-md-6">
+        <h2>About Me</h2>
         <p>Principal Engineer @ <a href="https://www.konsulko.com/">Konsulko Group</a></p>
         <p><a href="https://www.yoctoproject.org/">Yocto Project</a> contributor and <a href="https://www.openembedded.org/wiki/Main_Page">OpenEmbedded</a> member</p>
         <p><a href="https://gitlab.com/pbarker.dev">GitLab</a></p>
@@ -20,25 +24,28 @@
     <div class="col-md-8 page-content">
         <div>
             <h2>Posts</h2>
-            <hr />
         </div>
+        <hr />
         {% for article in articles_page.object_list %}
-        <div>
+        <div class="ml-2 mr-4">
             <h3 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
-            <p class="post-meta">Published <time datetime="{{ article.date.isoformat() }}">{{ article.date | strftime('%Y-%m-%d') }}</time></p>
+            <p class="post-meta">
+                Published: <time datetime="{{ article.date.isoformat() }}">{{ article.date | strftime('%Y-%m-%d') }}</time><br />
+                Tags: {{ article.tags|join(', ') }}
+            </p>
             <div class="post-summary">
                 {{ article.summary }}
             </div>
             <p><a href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
-            <hr />
         </div>
+        <hr />
         {% endfor %}
         <div class="float-right">
             <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
         </div>
     </div>
     <div class="col-md-4 py-4">
-        <a class="twitter-timeline" href="https://twitter.com/pbarker_dev?ref_src=twsrc%5Etfw"></a>
+        <a class="twitter-timeline" data-tweet-limit=10 href="https://twitter.com/pbarker_dev?ref_src=twsrc%5Etfw"></a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>
