@@ -1,0 +1,92 @@
+New YouTube Channel
+===================
+
+:date: 2020-11-23
+:tags: meta
+:summary: After uploading the video of my Rust/Yocto Project demo from the
+    Yocto Project Summit last month I received a lot of positive feedback.
+    This got me thinking that there was scope to record some more demos and
+    some more free-form hacking sessions and share these via my `YouTube
+    Channel <https://www.youtube.com/channel/UCvnVQTiuS9-1dxZI-SJGBRA>`__.
+    But why spend the time and effort to record, edit and publish these
+    videos? I'll try to explain some of the motivation here.
+
+Inspirations
+------------
+
+I've been inspired by the Twitch live streams from `The Yocto Jester
+<https://www.twitch.tv/theyoctojester>`__ (aka LetoThe2nd or occasionally
+just Josef, also streams to the `Yocto Project
+<https://www.twitch.tv/yocto_project>`__ Twitch stream) and `Kees Cook
+<https://www.twitch.tv/keescook>`__.
+
+From discussions on the Yocto Project's `mailing lists
+<https://lists.yoctoproject.org>`__ and IRC channels (``#yocto`` and ``#oe``
+on `Freenode <https://webchat.freenode.net/>`__) it's clear that Josef's
+streams have been really valuable to new users and new members of our
+community. Not everyone learns well from written material, some people need
+to see how software can be used to get a feel for it. I've even learned a few
+things myself from these streams, especially the recent one on working with
+`Windows Subsystem for Linux (WSL)
+<https://www.youtube.com/watch?v=R8HRqgNXlcM>`__.
+
+While I've been involved with the Yocto Project community for over 7 years
+now, I've only recently dipped my toes into contributing to the Linux Kernel.
+Kees Cook's streams have helped me understand a little better how maintainers
+work with and review contributed patches (or at least how one maintainer
+does). I've also picked up a few tricks for using git and other tools which I
+didn't know before.
+
+What I want to achieve
+----------------------
+
+It's probably easiest to start by explaining what I'm not trying to achieve
+here - the things that are explicitly outside my scope. I'm not trying to
+build a hugely popular channel with a large audience, pick up ad revenue or
+provide perfectly polished tutorial videos.
+
+What I do want to do though is fill in the gap for intermediate and advanced
+level videos on Yocto Project and particularly for material that shows people
+how they can contribute to the project. I'm hoping to show how to hack on the
+openembedded-core metadata, on the project documentation and on bitbake
+itself. I also want to capture my experience of learning Rust as an embedded
+developer as I don't think this is as well covered in video content as other
+approaches to learning rust.
+
+I also want to create videos which show the process of figuring things out as
+I go, of hacking and learning and debugging. Seeing only perfectly polished
+tutorials which show the direct route to a solution with no missteps inspires
+a bit of imposter syndrome and can make folks feel stupid if they can't
+figure things out straight away. While I plan to edit out long compile times
+and any uninteresting fights with my virtual machine setup or network, I will
+be leaving in mistakes and the process of discovery as I work on things.
+
+My other goal here is to improve my ability to present what I'm working on
+and to explain things as I go. I don't think I'm terrible at this but I do
+think there's a lot of room for me to do better. With many conferences
+remaining virtual in the coming year I think this will be very valuable.
+
+Implementation details
+----------------------
+
+I'll be releasing edited videos onto YouTube rather than live streaming.
+Editing videos obviously adds to the effort required here but it saves me a
+lot of up-front effort as well. For the videos I've posted so far I've done
+very little advance preparation, I've just dived into recording and edited
+out any major dead ends or long compile times afterwards. I can also join a
+few shorter sessions from different days together into a single video where
+appropriate which helps me to fit this around other projects and
+responsibilities.
+
+I'm using `OBS <https://obsproject.com/>`__ to record my screen and webcam
+together so that I don't have to sync and overlay the videos during editing.
+For video editing I'm using `kdenlive <https://kdenlive.org/en/>`__ which
+looks sufficient for now but I still have my eyes open for other options.
+
+Schedule
+--------
+
+Videos will normally be released at 11:00 UTC on Fridays. Depending on other
+commitments I'll likely be releasing a video every week or every fortnight
+but I don't give any hard guarantees. I recommend you subscribe to my channel
+and turn on notifications rather than checking each week.
