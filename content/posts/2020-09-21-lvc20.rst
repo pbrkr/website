@@ -25,6 +25,11 @@ Project.
 This talk will cover technical best practices and available tools, it will
 not give legal advice.
 
+Video
+-----
+
+.. youtube:: HILbAIeCTR8
+
 Slides
 ------
 
