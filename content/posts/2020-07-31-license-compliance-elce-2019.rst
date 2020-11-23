@@ -2,7 +2,15 @@ License Compliance in Embedded Linux with the Yocto Project (ELCE 2019)
 =======================================================================
 
 :date: 2020-07-31
-:summary: I presented a talk on the topics of License Compliance and OpenEmbedded/Yocto Project at the Embedded Linux Conference Europe (ELCE) 2019 in Lyon, France.
+:tags: yocto, linux, embedded-linux, conference-talks, license-compliance
+:summary: I presented a talk on the topics of License Compliance and
+    OpenEmbedded/Yocto Project at the Embedded Linux Conference Europe (ELCE)
+    2019 in Lyon, France. I discussed a set of build system agnostic best
+    practices for license compliance when working with Embedded Linux and
+    then looked in detail at the license compliance tools provided by the
+    Yocto Project. I highlighted ongoing and future work in these areas
+    within Yocto Project. I finished up by briefly discussing the tools and
+    benefits provided by other projects in this area.
 
 Abstract
 --------
