@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from pelican import __version__ as PELICAN_VERSION
 
 AUTHOR = 'Paul Barker'
-COPYRIGHT_YEAR = 2020
+COPYRIGHT_YEAR = '2020-2021'
 SITENAME = 'Paul Barker'
 SITEURL = ''
 THEME = 'theme'

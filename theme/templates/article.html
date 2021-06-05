@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+{% block head %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pbarker_dev" />
+    <meta name="twitter:title" content="{{ article.title|striptags|escape }}" />
+    <meta name="twitter:description" content="{{ article.summary|striptags|escape }}" />
+{% endblock head %}
 {% block content %}
 <div class="row mt-4">
     <div class="col-md-12">

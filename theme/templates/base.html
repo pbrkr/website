@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
   <head>
-    {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Pelican" />
@@ -10,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/local.css">
     <link rel="stylesheet" type="text/css" href="/css/youtube.css">
+    {% block head %}
     {% endblock head %}
   </head>
 
@@ -50,7 +50,8 @@
                 </div>
                 <div class="col-lg-4">
                     <p class="footer-msg text-right">
-                        Spotted a problem or got feedback? Please <a href="https://gitlab.com/pbarker.dev/website/-/issues">open an issue</a>.
+                        Spotted a problem or got feedback? <br />
+                        Please send mail to my <a href="https://lists.sr.ht/~pbarker/public-inbox">public-inbox</a>.
                     </p>
                 </div>
             </div>
