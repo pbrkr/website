@@ -46,3 +46,8 @@ ul {
 .section {
     padding-bottom: 0.4em;
 }
+
+.caption {
+    text-align: center;
+    font-size: 75%;
+}
