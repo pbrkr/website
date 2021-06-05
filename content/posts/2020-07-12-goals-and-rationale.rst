@@ -1,3 +1,7 @@
+..
+   Copyright (c) 2020 Paul Barker <paul@pbarker.dev>
+   SPDX-License-Identifier: CC-BY-ND-4.0
+
 Goals and Rationale
 ===================
 
