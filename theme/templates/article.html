@@ -7,8 +7,15 @@ SPDX-License-Identifier: Apache-2.0
 {% block head %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@pbarker_dev" />
-    <meta name="twitter:title" content="{{ article.title|striptags|escape }}" />
-    <meta name="twitter:description" content="{{ article.summary|striptags|escape }}" />
+    <meta property="og:title" content="{{ article.title|striptags|escape }}" />
+    <meta property="og:description" content="{{ article.summary|striptags|escape }}" />
+    <meta property="og:image" content="https://pbarker.dev/images/pbarker.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://pbarker.dev/" />
+    <meta property="article:published_time" content="{{ article.date.isoformat() }}" />
+    {% for tag in article.tags %}
+    <meta property="article:tag" content="{{ tag }}" />
+    {% endfor %}
 {% endblock head %}
 {% block content %}
 <div class="row mt-4">
