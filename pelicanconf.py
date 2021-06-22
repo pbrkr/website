@@ -20,7 +20,7 @@ TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
 
-OUTPUT_PATH = 'public'
+OUTPUT_PATH = 'public.dev'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
