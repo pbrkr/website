@@ -40,7 +40,7 @@ PLUGINS = (
     'pelican_youtube',
 )
 
-STATIC_PATHS = ('css', 'images', )
+STATIC_PATHS = ('css', 'images', 'ssh', 'pgp')
 
 ARTICLE_URL = 'posts/{date:%Y-%m-%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y-%m-%d}/{slug}/index.html'
