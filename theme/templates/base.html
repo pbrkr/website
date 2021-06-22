@@ -3,7 +3,8 @@
 Copyright (c) 2020-2021 Paul Barker <paul@pbarker.dev>
 SPDX-License-Identifier: Apache-2.0
 -->
-<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}"
+      prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article# profile: https://ogp.me/ns/profile">
   <head>
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />

@@ -4,6 +4,19 @@ SPDX-License-Identifier: Apache-2.0
 -->
 {% extends "base.html" %}
 
+{% block head %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pbarker_dev" />
+    <meta property="og:title" content="Paul Barker" />
+    <meta property="og:description" content="Embedded Linux & Open Source Professional" />
+    <meta property="og:image" content="https://pbarker.dev/images/pbarker.jpg" />
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Paul" />
+    <meta property="profile:last_name" content="Barker" />
+    <meta property="profile:username" content="pbarker" />
+    <meta property="profile:gender" content="male" />
+{% endblock head %}
+
 {% block content %}
 <div class="row my-4">
     <div class="col-md-12">
