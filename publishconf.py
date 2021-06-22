@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+# Copyright (c) 2020-2021 Paul Barker <paul@pbarker.dev>
+# SPDX-License-Identifier: Apache-2.0
+
 from __future__ import unicode_literals
 
 # This file is only used if you use `make publish` or

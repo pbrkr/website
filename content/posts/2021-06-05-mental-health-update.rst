@@ -1,3 +1,7 @@
+..
+   Copyright (c) 2021 Paul Barker <paul@pbarker.dev>
+   SPDX-License-Identifier: CC-BY-ND-4.0
+
 A mental health update
 ======================
 
