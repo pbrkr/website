@@ -1,0 +1,3 @@
+[submodule "keys"]
+	path = keys
+	url = https://git.sr.ht/~pbarker/keys

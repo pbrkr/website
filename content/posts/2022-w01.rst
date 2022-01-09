@@ -1,0 +1,125 @@
+..
+   Copyright (c) 2021 Paul Barker <paul@pbarker.dev>
+   SPDX-License-Identifier: CC-BY-ND-4.0
+
+Week Notes: 2022-W01
+====================
+
+:date: 2022-01-10
+:tags: week-notes
+:summary:
+
+General
+-------
+
+* I'm going to make more use of both of my twitter accounts this year. See
+  `this thread <https://twitter.com/pbarker_dev/status/1477266200656756736>`_
+  for a summary.
+
+  * `@pbarker_dev`_ will mostly stay focused on tech, open source and tech
+    policy issues.
+
+  * `@atonalnoise`_ will be my outlet for music related spam and occasional
+    thoughts on books & films.
+
+* I'm intending to post week notes like this each week, subject to my bandwidth,
+  physical health and mental health. I'll be taking breaks as and when I want to
+  and you should do the same. Be excellent to yourselves in 2022.
+
+Open Source
+-----------
+
+* Setting up a couple of new projects on GitHub as it's the most visible place
+  to host open source projects. It's also much improved over the last couple of
+  years with GitHub Actions, VS Code integration, Discussion, etc. Since hosting
+  projects under an organisation gives more flexibility, most projects will live
+  under a new `Unnecessary Abstraction`_ organisation.
+
+* Created initial skeleton of `arcr`_ project just before the new year. This
+  will be a tool to help preserve archival data by storing checksums and/or
+  signatures, supporting a regular scrub to ensure data has not been lost or
+  corrupted and enabling archive exports (with optional encryption) for long
+  term offline or off-site storage.
+  
+  * This will address my key concern with using traditional backup tools for
+    archival data - if backups are kept for a finite length of time but archived
+    data is only accessed very infrequently, data loss may occur and not be
+    noticed until the good backups have expired and been deleted.
+
+  * Other projects do exist for handling archival data but none of them have the
+    simplicity or focus that I want. Hopefully this approach will be useful to
+    other folks as well.
+
+* Moved `mirrorshades`_ over to GitHub and setup CI using GitHub Actions.
+  Updated the readme & project config to reflect the new URLs and contribution
+  methods. Fixed a couple of issues I found when using mirrorshades to backup
+  data to a new disk array. Also made a couple of minor agent improvements and
+  updated the changelog to prepare for a new release. Recent changes can be seen
+  in `pull request #1
+  <https://github.com/unnecessary-abstraction/mirrorshades/pull/1>`_.
+
+* Videos of my talks at the Yocto Project Summit 2021.11 are now available on
+  YouTube:
+
+  * `An Overview of the Hash Equivalence & PR Services
+    <https://www.youtube.com/watch?v=NwMNv9EDl14>`_
+    (duration: 21m49s)
+
+  * `Yocto Project lore: New mailing list tools
+    <https://www.youtube.com/watch?v=nHtcDqnO2zY>`_
+    (duration: 15m58s)
+
+Reading
+-------
+
+* `My first impressions of web3
+  <https://moxie.org/2022/01/07/web3-first-impressions.html>`_
+  by Moxie Marlinspike.
+
+  * This post addresses a really clear issue with all the web3 hype: What is
+    being touted as web3 isn't very decentralized and suffers from the same
+    incentive issues we see in "web2". It's likely that web3 will tend towards
+    the same sort of centralized mega-platforms we see already (e.g. Facebook,
+    Google, Amazon) but with some climate-destroying and inequality-generating
+    cryptocurrency dust sprinkled on top.
+
+* `On Fire
+  <https://www.penguin.co.uk/books/314/314933/on-fire/9780141991306.html>`_
+  by Naomi Klein.
+
+  * Subtitled "The Burning Case for a Green New Deal", this is a book of essays
+    on climate change, climate justice and the prospective of a "Green New
+    Deal"; written between 2010 and 2019.
+
+  * I've read 7 of the essays in this book so far. I've also read most of
+    Naomi Klein's previous books over the last 20 years, I'm familiar with her
+    thinking and it has heavily influenced mine. I think this book is an
+    excellent introduction to her work. The essay "Capitalism vs. the Climate"
+    is an especially good place to start for someone unfamiliar with Naomi's
+    outlook and really captures the changes we need to see in politics and
+    economic thinking to tackle climate change.
+
+Watching
+--------
+
+* `Jill Bearup throws Tom Scott through a window
+  <https://www.youtube.com/watch?v=HwuwgJR2Qg8>`_
+  from Tom's YouTube channel and
+  `Tom Scott Walked Into a Bar
+  <https://www.youtube.com/watch?v=leKKoIjeucs>`_
+  from Jill's YouTube channel. Great fun all around.
+
+Listening
+---------
+
+* `Jenny of Oldstones <https://www.youtube.com/watch?v=uO4qhtGij_0>`_
+  by The Dark Side of the Moon. This has been stuck in my head
+  for months and I doubt it'll be leaving any time soon.
+
+.. youtube:: uO4qhtGij_0
+
+.. _Unnecessary Abstraction: https://github.com/unnecessary-abstraction
+.. _arcr: https://github.com/unnecessary-abstraction/arcr
+.. _mirrorshades: https://github.com/unnecessary-abstraction/mirrorshades
+.. _@pbarker_dev: https://twitter.com/pbarker_dev
+.. _@atonalnoise: https://twitter.com/atonalnoise

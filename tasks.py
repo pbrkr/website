@@ -65,3 +65,10 @@ def serve(c):
 
     sys.stderr.write('Serving on port {port} ...\n'.format(**CONFIG))
     server.serve_forever()
+
+@task
+def deploy(c, prod=False):
+    """Deploy the website. `rclone` must be available and already configured correctly."""
+    build(c, prod)
+    target = 'prod' if prod else 'dev'
+    c.run(f'rclone sync -P public.{target}/ www-{target}:', pty=True)
