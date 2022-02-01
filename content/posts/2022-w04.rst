@@ -1,0 +1,90 @@
+..
+   Copyright (c) 2021 Paul Barker <paul@pbarker.dev>
+   SPDX-License-Identifier: CC-BY-ND-4.0
+
+Week Notes: 2022-W03 & 2022-W04
+===============================
+
+:date: 2022-02-01
+:tags: week-notes
+:summary:
+
+General
+-------
+
+* Wrote to Carla and Adrian, the co-leaders of the Green Party of England &
+  Wales, to highlight the endemic transphobia in the party. It's exceptionally
+  disappointing to see this in an organisation that prides itself on fighting
+  for social justice and being LGBTQIA+ friendly. Unfortunately though, if these
+  issues aren't taken seriously and addressed then I'll be resigning my party
+  membership.
+
+* Lost some time due to my Linux build machine having a fall out with one of its
+  NVMe drives. Looks like the thing still mounts correctly but runs into errors
+  as soon as I try to write data to the drive. I've switched back to running
+  builds on a spinning rust HDD for now, hopefully will be able to test out the
+  NVMe drive in another machine and determine if its broken soon.
+
+Open Source
+-----------
+
+* Updated `meta-linux-mainline
+  <https://git.sr.ht/~pbarker/meta-linux-mainline>`_ to pull in new kernel
+  versions including v5.17-rc1. Switched the LTS kernel branch to v5.15.y.
+
+* I found some very, very strange Python behavior. It probably has a good
+  reason for behaving this way but I find it completely counter-intuitive.
+  Tripped me up and took a couple of hours to really get my head around why our
+  code wasn't working.
+
+    * The following code prints 4, 4, 4, 4, 4::
+
+        fns = []
+        for i in range(5):
+            fns.append(lambda: print(i))
+
+        for f in fns:
+            f()
+
+    * The following code, where the closure is instead created inside a separate
+      function, prints 0, 1, 2, 3, 4::
+
+        def make_closure(i):
+            return lambda: print(i)
+
+        fns = []
+        for i in range(5):
+            fns.append(make_closure(i))
+
+        for f in fns:
+            f()
+
+Reading
+-------
+
+* Proven Guilty and White Night by Jim Butcher. I really enjoy 99% of the
+  Dresden Files, the audiobooks read by James Marsters are fantastic, the urban
+  fantasy setting is both fun and interesting. The slowly unfolding picture of
+  how the events in different books in the series are linked is great and keeps
+  me reading more. But, stars and stones (to use a Dresden expression), the
+  unnecessary sexualization of women in this series is painful.
+
+Watching
+--------
+
+* `Line Goes Up – The Problem With NFTs
+  <https://www.youtube.com/watch?v=YQ_xWvX1n9g>`_,
+  a video essay from Folding Ideas (aka Dan Olson).
+  This is a much-needed, in-depth, critical look at NFTs and cryptocurrency.
+  It's pretty much required viewing for anyone in or adjacent to tech or
+  internet culture. It's a long video but it's worth every minute of your time.
+
+.. youtube:: YQ_xWvX1n9g
+
+Listening
+---------
+
+* `Revel in Time <https://www.youtube.com/watch?v=-fHN4Qceip4>`_
+  by Star One.
+
+.. youtube:: -fHN4Qceip4
