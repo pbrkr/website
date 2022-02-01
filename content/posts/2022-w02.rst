@@ -1,0 +1,57 @@
+..
+   Copyright (c) 2021 Paul Barker <paul@pbarker.dev>
+   SPDX-License-Identifier: CC-BY-ND-4.0
+
+Week Notes: 2022-W02
+====================
+
+:date: 2022-01-17
+:tags: week-notes
+:summary:
+
+Open Source
+-----------
+
+* Updated `meta-linux-mainline
+  <https://git.sr.ht/~pbarker/meta-linux-mainline>`_ for the first time in a
+  couple of months after fixing a build issue which appeared back at the start
+  of November. The fix was to backport a kernel patch introduced back in April
+  '21 to the earlier 5.10.y, 5.4.y and 4.19.y series. The backport is staged in
+  meta-linux-mainline for now and `has been requested upstream via the
+  linux-stable list
+  <https://lore.kernel.org/stable/04598430-7383-b725-2f5f-3f2b16aaca36@sancloud.com/>`_.
+
+* Also requested that the addition of the ``python3-dtschema-wrapper`` recipe to
+  openembedded-core be backported to `dunfell
+  <https://lore.kernel.org/openembedded-core/20220114132224.2679-1-paul.barker@sancloud.com/>`_
+  and `honister
+  <https://lore.kernel.org/openembedded-core/20220114132150.2604-1-paul.barker@sancloud.com/>`_
+  to allow Linux v5.16 kernels to build for ARM targets on those branches.
+
+Watching
+--------
+
+* Season 2 of The Witcher. We devoured all 8 episodes over a couple of days and
+  really enjoyed it. I found it much easier to follow than the first season and
+  I got much more feel for the characters. We're already looking forward to
+  season 3!
+
+Drinking
+--------
+
+* `Christmas Cake & Dark Chocolate & Medjool Dates & Cinnamon 8 Year Old
+  <https://www.masterofmalt.com/whiskies/christmas-cake-and-dark-chocolate-and-medjool-dates-and-cinnamon/christmas-cake-and-dark-chocolate-and-medjool-dates-and-cinnamon-8-year-old-whisky/?srh=1>`_
+  48% ABV Speyside Single Malt Scotch Whisky. Tastes like Christmas in a glass.
+  It may not be Christmas any more but we have plenty of dark January nights
+  ahead and this is very much appreciated.
+
+Listening
+---------
+
+* `Drone Carrying Dread <https://www.youtube.com/watch?v=5BrAAXCbUXE>`_
+  by Author & Punisher. I'm so excited for the new album "Krüller" coming out
+  Feb 11th this year. There's a good chance it'll be ending up in my top 10 of
+  the year. The album can be pre-ordered `on bandcamp
+  <https://authorandpunisher.bandcamp.com/album/kr-ller>`_.
+
+.. youtube:: 5BrAAXCbUXE
