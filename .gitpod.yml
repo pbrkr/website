@@ -1,0 +1,9 @@
+# Copyright (c) 2022 Paul Barker <paul@pbarker.dev>
+# SPDX-License-Identifier: Apache-2.0
+
+tasks:
+  - init: |
+        pip install -r requirements.txt
+        pre-commit install --install-hooks
+    env:
+      PRE_COMMIT_HOME: /workspace/.pre-commit
